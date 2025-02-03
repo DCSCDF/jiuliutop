@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台登录界面</title>
+    <link rel="stylesheet" type="text/css" href="/path/to/your/css/style.css">
+</head>
+
+<body>
+    <div id="main">
+        <h2 align="center">后台登录</h2>
+        <form action="/admin/denglu" method="post">
+            <table id="tbdl">
+                <tr>
+                    <td>用户名：</td>
+                    <td><input type="text" name="username" size="20"></td>
+                </tr>
+                <tr>
+                    <td>密&nbsp;&nbsp;码：</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <center>
+                            <input type="submit" name="sub" value="登录">
+                            <input type="reset" name="ret" value="重置">
+                            <a href="/admin/register">注册</a>
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
