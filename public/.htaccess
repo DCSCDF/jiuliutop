@@ -1,0 +1,7 @@
+# 启用重写模块
+RewriteEngine On
+
+# 将所有请求重定向到 index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?s=$1 [QSA,L]

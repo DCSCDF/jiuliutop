@@ -1,0 +1,25 @@
+{
+    "name": "jiuliutop/blog",
+    "description": "一个用于开发博客网站的ThinkPHP项目",
+    "type": "project",
+    "require": {
+        "php": ">=7.2",
+        "topthink/framework": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "php artisan package:discover --ansi"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
